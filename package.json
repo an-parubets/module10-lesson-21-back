@@ -1,0 +1,46 @@
+{
+  "name": "articles-server",
+  "version": "0.0.1",
+  "private": false,
+  "description": "articles server",
+  "main": "./src/index.js",
+  "bin": "./src/index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an-parubets/module10-lesson-21-back.git"
+  },
+  "author": "an-parubets",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}
